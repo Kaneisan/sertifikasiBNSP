@@ -20,8 +20,10 @@
       <td>{{$surat->judul}}</td>
       <td>{{$surat->created_at}}</td>
       <td><button type="button" class="btn btn-danger">Hapus</button>
-        <a href="/surat/{{$surat->id}}/cetak_pdf" class="btn btn-warning" target="_blank">Unduh</a>
-        <a href="/surat/{{$surat->id}}" class="btn btn-primary">Lihat</button></td>
+        <a href="{{route('surat.unduh',[$surat->pdf])}}" class="btn btn-warning" target="_blank">Unduh</a>
+        <!-- <a href="/storage/{{$surat->pdf}}" class="btn btn-warning" target="_blank">Unduh</a> -->
+        <a href="{{route('surat.show',[$surat->id])}}" class="btn btn-primary">Lihat</button></td>
+        <!-- <a href="/surat/{{$surat->id}}" class="btn btn-primary">Lihat</button></td> -->
     </tr>
     @endforeach
   </tbody>

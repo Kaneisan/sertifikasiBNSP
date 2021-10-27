@@ -16,7 +16,7 @@ use App\Http\Controllers\SuratController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/surat/{id}/cetak_pdf', [SuratController::class, 'cetak_pdf']);
+Route::get('storage/{pdf}', [SuratController::class, 'cetak_pdf'])->name('surat.unduh');
 Route::get('/surat/pdf', [SuratController::class, 'pdf']);
 // Route::get('/user', [UserController::class, 'index']);
 Route::resource('surat', 'App\Http\Controllers\SuratController');
