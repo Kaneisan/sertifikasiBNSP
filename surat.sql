@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2021 at 03:11 PM
+-- Generation Time: Oct 27, 2021 at 05:23 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -111,9 +111,12 @@ CREATE TABLE `surats` (
 --
 
 INSERT INTO `surats` (`id`, `nomor`, `kategori`, `judul`, `pdf`, `created_at`, `updated_at`) VALUES
-(2, '1232', 'Pengumuman', '423', '.pdf', '2021-10-26 09:07:01', '2021-10-26 09:07:01'),
 (3, 'aaa', 'Undangan', 'asd', 'pdf/6NGIchk7X15avb2HDoTfQASVMDTBZhtIDHCzbMnQ.pdf', '2021-10-27 01:19:07', '2021-10-27 01:19:07'),
-(4, '1337', 'Pengumuman', 'Lorem ipsum', 'pdf/ZDMnB1g2xOUHpI8ftqAMdBiepQDvy9JDqjzeGviM.pdf', '2021-10-27 03:52:56', '2021-10-27 03:52:56');
+(4, '1337', 'Pengumuman', 'Lorem ipsum', 'pdf/ZDMnB1g2xOUHpI8ftqAMdBiepQDvy9JDqjzeGviM.pdf', '2021-10-27 03:52:56', '2021-10-27 03:52:56'),
+(5, '1123', 'Undangan', 'Pemilihan RT', 'pdf/ZeW4OuWuc3vGYHNgZO5FuG7gtdOuKUXZ9ITkJUxi.pdf', '2021-10-27 07:35:27', '2021-10-27 07:35:27'),
+(6, '14123', 'Undangan', 'Pemilihan RW', 'pdf/GnFH0O3wvMsccTpYJ9L7S7cgMLy90ei25SJDmMhF.pdf', '2021-10-27 07:35:50', '2021-10-27 07:35:50'),
+(7, '4123', 'Undangan', 'Pemilihan Ketua Kelas', 'pdf/mh9SDzu1MwPXbh8tNig1dlW0dgdZNBobDzS7Nnlh.pdf', '2021-10-27 07:36:10', '2021-10-27 07:36:10'),
+(9, '2819', 'Nota Dinas', 'Hasil keuangan', 'pdf/1A1NrEnIXqEdT5ZX96ophjBZwIuAcD0LcIzNduIr.pdf', '2021-10-27 08:11:21', '2021-10-27 08:11:21');
 
 -- --------------------------------------------------------
 
@@ -202,7 +205,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `surats`
 --
 ALTER TABLE `surats`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
