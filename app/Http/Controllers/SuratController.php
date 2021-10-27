@@ -14,11 +14,20 @@ class SuratController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function index()
+    public function index(Request $request)
     {
-        
-        $surats=Surat::all();
+        $cari_surat = $request->get('judul');
+        if($cari_surat){
+            $surats=Surat::where('judul','LIKE','%'.$cari_surat.'%')
+                        ->orderBy('created_at','DESC')
+                        ->paginate(5);
+        }else{
+            $surats=Surat::orderBy('created_at','DESC')
+                        ->paginate(5);
+            
+        }
         return view('suratdashboard',compact('surats'));
+       
     
     }
 
