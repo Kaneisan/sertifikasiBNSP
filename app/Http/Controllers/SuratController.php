@@ -106,8 +106,10 @@ class SuratController extends Controller
      * @return \Illuminate\Http\Response
      */
        
-    public function destroy(Surat $surat)
+    public function destroy($id)
     {
-        //
+        $surat = Surat::find($id);
+        $surat->delete();
+        return redirect('/surat');
     }
 }

@@ -24,10 +24,10 @@
 		  		<h1><a href="index.html" class="logo">Menu</a></h1>
 	        <ul class="list-unstyled components mb-5">
 	          <li>
-	              <a href="#">Arsip</a>
+	              <a href="/surat">Arsip</a>
 	          </li>
 	          <li>
-	              <a href="#">About</a>
+	              <a href="/about">About</a>
 	          </li>
 	      </div>
     	</nav>

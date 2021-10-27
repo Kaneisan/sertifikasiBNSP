@@ -1,6 +1,7 @@
 @extends('master')
 @section('content')
 <div>
+<h1>Arsip Surat -> Lihat</h1>
 <p>Nomor: {{$surat->nomor}}</p>
 <p>Kategori: {{$surat->kategori}}</p>
 <p>Judul: {{$surat->judul}}</p>

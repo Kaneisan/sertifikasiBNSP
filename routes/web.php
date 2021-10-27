@@ -16,6 +16,10 @@ use App\Http\Controllers\SuratController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function(){
+    return view('about');
+});
+Route::get('/destroy/delete{id}', [SuratController::class, 'destroy']);
 Route::get('storage/{pdf}', [SuratController::class, 'cetak_pdf'])->name('surat.unduh');
 Route::get('/surat/pdf', [SuratController::class, 'pdf']);
 // Route::get('/user', [UserController::class, 'index']);

@@ -1,5 +1,8 @@
 @extends('master')
 @section('content')
+<h1>Arsip Surat</h1>
+<>Berikut ini adalah surat-surat yang telah terbit dan diarsipkan.</p>
+<p>Klik"Lihat" pada kolom aksi untuk menampilkan surat.</p>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -19,7 +22,7 @@
       <td>{{$surat->kategori}}</td>
       <td>{{$surat->judul}}</td>
       <td>{{$surat->created_at}}</td>
-      <td><button type="button" class="btn btn-danger">Hapus</button>
+      <td><a href="/destroy/delete{{ $surat->id }}" target="_blank" class="btn btn-danger">Hapus</button>
         <a href="{{route('surat.unduh',[$surat->pdf])}}" class="btn btn-warning" target="_blank">Unduh</a>
         <!-- <a href="/storage/{{$surat->pdf}}" class="btn btn-warning" target="_blank">Unduh</a> -->
         <a href="{{route('surat.show',[$surat->id])}}" class="btn btn-primary">Lihat</button></td>
