@@ -51,7 +51,6 @@ class SuratController extends Controller
         ]);
         return redirect('/surat');
     }
-
     /**
      * Display the specified resource.
      *
